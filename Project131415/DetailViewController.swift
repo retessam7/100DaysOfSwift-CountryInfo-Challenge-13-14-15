@@ -33,6 +33,11 @@ class DetailViewController: UITableViewController {
         case 1:
             let languages = country.languages.values.joined(separator: ", ")
             cell.textLabel?.text = "Language: \(languages)"
+        case 2:
+            let currencies = country.currencies.keys.joined(separator: "") //joined убрать - [ ]
+            cell.textLabel?.text = "Currencies: \(currencies)"
+        case 3:
+            cell.textLabel?.text = "Region: \(country.region)"
         default:
             cell.textLabel?.text = "- - -"
         }
@@ -40,3 +45,21 @@ class DetailViewController: UITableViewController {
     }
 
 }
+
+//  Example
+//{
+//  "currencies": {
+//    "EUR": {
+//      "name": "Euro",
+//      "symbol": "€"
+//    }
+//  },
+//  "capital": [
+//    "Tallinn"
+//  ],
+//  "region": "Europe",
+//  "languages": {
+//    "est": "Estonian"
+//  }
+//}
+//]
