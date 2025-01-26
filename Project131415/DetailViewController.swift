@@ -30,6 +30,9 @@ class DetailViewController: UITableViewController {
         switch indexPath.row {
         case 0:
             cell.textLabel?.text = "Capital: \(country.capital[0])"
+        case 1:
+            let languages = country.languages.values.joined(separator: ", ")
+            cell.textLabel?.text = "Language: \(languages)"
         default:
             cell.textLabel?.text = "- - -"
         }
