@@ -9,7 +9,7 @@ import UIKit
 
 class ViewController: UITableViewController {
     var countries = [Country]()
-    var countriesNameList = ["estonia", "france", "germany", "ireland", "italy", "poland", "russia", "spain", "usa"]
+    var countriesNameList = ["estonia", "france", "germany", "italy", "poland", "russia", "spain", "usa"]
     
 
     override func viewDidLoad() {
@@ -66,6 +66,14 @@ class ViewController: UITableViewController {
 
         } else {
             print("Ошибка декодирования")
+        }
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if let vc = storyboard?.instantiateViewController(identifier: "Detail") as? DetailViewController {
+            let selectedCountry = countries[indexPath.row]
+            vc.detailItem = selectedCountry
+            navigationController?.pushViewController(vc, animated: true)
         }
     }
 }
