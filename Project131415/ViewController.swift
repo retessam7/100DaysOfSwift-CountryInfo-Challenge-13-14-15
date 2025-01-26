@@ -13,9 +13,8 @@ class ViewController: UITableViewController {
     
 
     override func viewDidLoad() {
-        
         super.viewDidLoad()
-        
+        title = "Countries INFO"
         loadCountries()
     }
     
@@ -73,6 +72,7 @@ class ViewController: UITableViewController {
         if let vc = storyboard?.instantiateViewController(identifier: "Detail") as? DetailViewController {
             let selectedCountry = countries[indexPath.row]
             vc.detailItem = selectedCountry
+            vc.selectedCountryName = countriesNameList[indexPath.row].uppercased()
             navigationController?.pushViewController(vc, animated: true)
         }
     }

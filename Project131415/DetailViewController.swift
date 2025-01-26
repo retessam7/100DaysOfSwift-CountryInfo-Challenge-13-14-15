@@ -9,10 +9,11 @@ import UIKit
 
 class DetailViewController: UITableViewController {
     var detailItem: Country?
+    var selectedCountryName: String?
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        title = selectedCountryName
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

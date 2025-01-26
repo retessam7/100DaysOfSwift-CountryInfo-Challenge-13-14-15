@@ -15,7 +15,6 @@
 		A246160F2D43E63C00296408 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A246160D2D43E63C00296408 /* LaunchScreen.storyboard */; };
 		A24616172D43EF6F00296408 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A24616162D43EF6F00296408 /* DetailViewController.swift */; };
 		A246161B2D43F1D200296408 /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = A246161A2D43F1D200296408 /* Country.swift */; };
-		A246161D2D43F5E400296408 /* Countries.swift in Sources */ = {isa = PBXBuildFile; fileRef = A246161C2D43F5E400296408 /* Countries.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,7 +28,6 @@
 		A24616102D43E63C00296408 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A24616162D43EF6F00296408 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		A246161A2D43F1D200296408 /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
-		A246161C2D43F5E400296408 /* Countries.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Countries.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,7 +64,6 @@
 				A24616042D43E63500296408 /* SceneDelegate.swift */,
 				A24616062D43E63500296408 /* ViewController.swift */,
 				A246161A2D43F1D200296408 /* Country.swift */,
-				A246161C2D43F5E400296408 /* Countries.swift */,
 				A24616162D43EF6F00296408 /* DetailViewController.swift */,
 				A24616082D43E63500296408 /* Main.storyboard */,
 				A246160B2D43E63C00296408 /* Assets.xcassets */,
@@ -151,7 +148,6 @@
 				A24616032D43E63500296408 /* AppDelegate.swift in Sources */,
 				A24616052D43E63500296408 /* SceneDelegate.swift in Sources */,
 				A246161B2D43F1D200296408 /* Country.swift in Sources */,
-				A246161D2D43F5E400296408 /* Countries.swift in Sources */,
 				A24616172D43EF6F00296408 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
